@@ -1,0 +1,149 @@
+/* src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+  max-width: 101vw;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #F6F2ED;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@keyframes circular-path-1 {
+  0% {
+    transform: rotate(0deg) translateX(100px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translateX(100px) rotate(-360deg);
+  }
+}
+
+@keyframes circular-path-2 {
+  0% {
+    transform: rotate(0deg) translateX(120px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg) translateX(120px) rotate(360deg);
+  }
+}
+
+@keyframes circular-path-3 {
+  0% {
+    transform: rotate(0deg) translateX(140px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translateX(140px) rotate(-360deg);
+  }
+}
+
+@keyframes circular-path-4 {
+  0% {
+    transform: rotate(0deg) translateX(160px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg) translateX(160px) rotate(360deg);
+  }
+}
+
+/* Add more keyframes as needed */
+
+/* General Styling */
+.water-animation {
+  position: relative;
+}
+
+.tech-stack img {
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+/* Assign Different Animations */
+.animate-float-0 {
+  animation: circular-path-1 6s infinite;
+}
+
+.animate-float-1 {
+  animation: circular-path-2 7s infinite;
+}
+
+.animate-float-2 {
+  animation: circular-path-3 8s infinite;
+}
+
+.animate-float-3 {
+  animation: circular-path-4 9s infinite;
+}
+
+.animate-float-4 {
+  animation: circular-path-1 10s infinite;
+}
+
+.animate-float-5 {
+  animation: circular-path-2 11s infinite;
+}
+
+.animate-float-6 {
+  animation: circular-path-3 12s infinite;
+}
+
+.animate-float-7 {
+  animation: circular-path-4 13s infinite;
+}
+
+.animate-float-8 {
+  animation: circular-path-1 14s infinite;
+}
+
+.animate-float-9 {
+  animation: circular-path-2 15s infinite;
+}
+
+.animate-float-10 {
+  animation: circular-path-3 16s infinite;
+}
+
+.animate-float-11 {
+  animation: circular-path-4 17s infinite;
+}
+
+.testimonials-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.testimonial {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 32px;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial:hover {
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.logo-container img {
+  border-radius: 50%;
+}
+
+.text-container h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.text-container p {
+  color: #6b7280;
+}
